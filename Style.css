@@ -1,0 +1,294 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	background: silver;
+}
+
+.wrapper {
+	width: 754px;
+	min-height: 1280px;
+	transform: translate(-50%);
+	left: 50%;
+	position: absolute;
+	background: white;
+}
+
+nav {
+	width: 754px;
+	height: 47px;
+	position: absolute;
+	left: 50%;
+	background: #323232;
+	transform: translate(-50%);
+}
+
+nav::before {
+	top: 65px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 33px 0 33px;
+	border-color: #323232 transparent transparent transparent;
+	position: relative;
+	left: 45.65%;
+	/*Transform-translate - не работает*/
+}
+
+content {
+	display: block;
+	width: 754px;
+	height: 536px;
+	transform: translate(-50%);
+	left: 50%;
+	position: relative;
+	background: white;
+	top: 47px;
+	z-index: -1;
+}
+
+#HeadIcon {
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute; 
+}
+
+ul, li {
+	display: inline-block;
+}
+
+#blueWord{
+	color: #40C1ED;
+	text-align: center;
+}
+
+.headLinks {
+	text-decoration: none;
+	color: #c6c6c6;
+	padding-left: 2px;	
+}
+
+#rightSideFromLogo {
+	padding-left: 90px;
+}
+
+#navList {
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute; 
+	top: 20px;
+	font-size: 10px;
+}
+
+#blueWord:hover, .headLinks:hover {
+	color: #606060;	
+}
+/*
+#slide {
+	transform: translate(-50%);
+	left: 50%;
+	position: absolute;
+	top: 65px;
+}
+*/
+
+content {
+	background: white;
+}
+
+.aboutAuthorBlock {
+	width: 754px;
+	height: 252px;
+	background: #2eb398;
+	transform: translate(-50%);
+	left: 50%;
+	position: absolute;
+ 	top: 579px;
+}
+
+.imgAuthor {
+	float: left;
+	left: 89px;
+	top: 50px;
+	display: inline-block;
+	position: relative;
+	width: 131px;
+	height: 152px;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.textWrap {
+	width: 450px;
+	height: 110px;
+	font-size: 14px;
+	position: absolute;
+	left: 234px;
+	top: 50px;
+}
+
+#textAboutAuthor {
+	font-size: 10px;
+	line-height: 1.5;
+	color: #ecffff;
+}
+
+h1 {
+	font-size: 20px;
+	color: #ecffff;
+}
+
+footer {
+	height: 417px;
+	width: 754px;
+	background: #323232;
+	position: relative;
+	display: block;
+	float: left;
+	top: 295px;
+}
+
+#iconList {
+	top: 35px;
+	left: 325px;
+	position: relative;
+	color: #a5dbd5;
+	transform: scale(1.5);
+}
+
+.fab {
+	color: #acddd7;
+	padding: 0;
+	font-size: 12px;
+}
+
+.footerHeadline {
+	position: relative;
+	top: 46px;
+	left: 90px;
+	line-height: 1;
+	color:  #c6c6c6;
+}
+
+.footerHeadline > p{
+	font-size: 14px
+}
+
+.form {
+	margin-top: 15px;
+	width: 425px;
+	height: 255px;
+	position: relative;
+	left: 90px;
+	top: 45px;
+}
+
+input {
+	padding: 5px;
+	width: 415px;
+	margin-bottom: 15px;
+	background: #454545;
+	border: none;
+	height: 18px;
+	font-size: 10px;
+	color:  #c6c6c6;
+	font-size: 14px;
+}
+
+textarea {
+	border: none;
+	resize: none;
+	width: 415px;
+	height: 100px;
+	margin-top: -4px;
+	background: #454545;
+	padding: 5px;
+	font-size: 10px;
+	color:  #c6c6c6;
+	font-size: 14px;
+}
+
+#Subject {
+	margin-top: -5px;
+}
+
+input[type="Email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder { 
+	color: #c6c6c6; 
+	font-size: 10px;
+}
+
+.form__error {
+	color: red;
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+}
+input:valid:not(:placeholder-shown) {
+	border-color: green;
+}
+input:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}
+form > button {
+	background: #2eb398;
+	border: none;
+	color: #d3faf1;
+	width: 66px;		
+	height: 27px;
+	left: 360px;
+	margin-top: 6px;
+	position: relative;
+}
+
+.textBlockFooter {
+	position: absolute;
+	float: left;
+	left: 533px;
+	top: 95px;
+	width: 135px;
+	height: 90px;
+	font-size: 9px;
+	line-height: 1.6;
+	color: #ecffff;
+}
+
+.contacts {
+	width: 140px;
+	font-size: 9px;
+	height: 52px;
+	left: 533px;
+	position: absolute;
+	top: 215px;
+	line-height: 1.8;
+	font-family: 'Overpass', sans-serif;
+	color: #ecffff;
+}
+
+.fas {
+	color: #2eb398;
+}
+ 
+ .footersDownDiv {
+ 	width: 754px;
+ 	height: 32px;
+ 	background: #222222;
+ 	position: absolute;
+ 	top: 100%;
+ }
+
+ #postQuote {
+ 	font-size: 10px;
+ 	color: #454545;
+ 	position: absolute;
+ 	left: 28px;
+ 	top: 10px;
+ }
